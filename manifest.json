@@ -1,0 +1,15 @@
+{
+  "name": "No Gap",
+  "description": "Removes so called `gender gaps` from text (Russian).",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": { "64": "images/icon64.png" }
+}
